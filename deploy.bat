@@ -1,6 +1,6 @@
 @echo off
 REM ============================
-REM GitHub Pages Upload Script
+REM GitHub Pages Upload Script (Fixed)
 REM ============================
 
 REM Set your local folder path
@@ -16,8 +16,10 @@ REM Initialize git if not already done
 git init
 
 REM Add remote if not already set
-git remote remove origin
 git remote add origin %RepoURL%
+
+REM Rename branch to main
+git branch -M main
 
 REM Stage all changes
 git add .
