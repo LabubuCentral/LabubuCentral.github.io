@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labubu Catalog - Shop Labubu Figures | Labubu Central</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="https://via.placeholder.com/50x50/ff6b9d/ffffff?text=LC" alt="Labubu Central" class="logo">
+                <h1>Labubu Central</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#catalog" class="active">Shop</a></li>
+                <li><a href="blog.html">Guides</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Labubu Catalog</h1>
+            <p>Discover and shop from our complete collection of Labubu figures</p>
+        </section>
+
+        <section class="filters-section">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort" class="filter-select">
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="edition">Edition:</label>
+                    <select id="edition" class="filter-select">
+                        <option value="all">All Editions</option>
+                        <option value="basic">Basic Series</option>
+                        <option value="forest">Forest Series</option>
+                        <option value="ocean">Ocean Series</option>
+                        <option value="space">Space Series</option>
+                        <option value="chill">Time to Chill</option>
+                        <option value="limited">Limited Edition</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="collection">Collection:</label>
+                    <select id="collection" class="filter-select">
+                        <option value="all">All Collections</option>
+                        <option value="popmart">Pop Mart Official</option>
+                        <option value="collab">Collaborations</option>
+                        <option value="exclusive">Exclusive</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="catalog-grid">
+                <!-- Basic Series -->
+                <div class="labubu-card" data-edition="basic" data-collection="popmart">
+                    <img src="https://via.placeholder.com/300x300/FF6B9D/ffffff?text=BASIC+CLASSIC" alt="Labubu Basic Series">
+                    <div class="card-content">
+                        <h3>Labubu Basic Series</h3>
+                        <p class="variant">Classic Variant</p>
+                        <div class="price-range">$27.99 - $35.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://amzn.to/3KjKsXT" class="buy-btn amazon" target="_blank" rel="noopener">Amazon</a>
+                            <a href="https://www.target.com/p/pop-mart-labubu-time-to-chill-series-vinyl-face-blind-box/-/A-90416022?tag=labubucentral-20" class="buy-btn target" target="_blank" rel="noopener">Target</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="labubu-card" data-edition="basic" data-collection="popmart">
+                    <img src="https://via.placeholder.com/300x300/EF4444/ffffff?text=BASIC+SPECIAL" alt="Labubu Basic Series - Special Edition">
+                    <div class="card-content">
+                        <h3>Labubu Basic Series</h3>
+                        <p class="variant">Special Edition</p>
+                        <div class="price-range">$32.99 - $42.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://amzn.to/3KjKsXT" class="buy-btn amazon" target="_blank" rel="noopener">Amazon</a>
+                            <a href="https://www.walmart.com/search?q=labubu+pop+mart&tag=labubucentral-20" class="buy-btn walmart" target="_blank" rel="noopener">Walmart</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forest Series -->
+                <div class="labubu-card" data-edition="forest" data-collection="popmart">
+                    <img src="https://via.placeholder.com/300x300/10B981/ffffff?text=FOREST+NATURE" alt="Labubu Forest Series">
+                    <div class="card-content">
+                        <h3>Labubu Forest Series</h3>
+                        <p class="variant">Nature Variant</p>
+                        <div class="price-range">$38.99 - $49.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://amzn.to/3KjKsXT" class="buy-btn amazon" target="_blank" rel="noopener">Amazon</a>
+                            <a href="https://www.target.com/p/pop-mart-labubu-time-to-chill-series-vinyl-face-blind-box/-/A-90416022?tag=labubucentral-20" class="buy-btn target" target="_blank" rel="noopener">Target</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="labubu-card" data-edition="forest" data-collection="collab">
+                    <img src="https://via.placeholder.com/300x300/F59E0B/ffffff?text=FOREST+LIMITED" alt="Labubu Forest Series - Limited">
+                    <div class="card-content">
+                        <h3>Labubu Forest Series</h3>
+                        <p class="variant">Limited Edition</p>
+                        <div class="price-range">$55.99 - $79.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn exclusive" target="_blank" rel="noopener">Exclusive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ocean Series -->
+                <div class="labubu-card" data-edition="ocean" data-collection="popmart">
+                    <img src="https://via.placeholder.com/300x300/3B82F6/ffffff?text=OCEAN+DEEP" alt="Labubu Ocean Series">
+                    <div class="card-content">
+                        <h3>Labubu Ocean Series</h3>
+                        <p class="variant">Deep Sea Variant</p>
+                        <div class="price-range">$41.99 - $52.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://amzn.to/3KjKsXT" class="buy-btn amazon" target="_blank" rel="noopener">Amazon</a>
+                            <a href="https://www.target.com/p/pop-mart-labubu-time-to-chill-series-vinyl-face-blind-box/-/A-90416022?tag=labubucentral-20" class="buy-btn target" target="_blank" rel="noopener">Target</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Space Series -->
+                <div class="labubu-card" data-edition="space" data-collection="popmart">
+                    <img src="https://via.placeholder.com/300x300/8B5CF6/ffffff?text=SPACE+GALAXY" alt="Labubu Space Series">
+                    <div class="card-content">
+                        <h3>Labubu Space Series</h3>
+                        <p class="variant">Galaxy Variant</p>
+                        <div class="price-range">$44.99 - $58.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://amzn.to/3KjKsXT" class="buy-btn amazon" target="_blank" rel="noopener">Amazon</a>
+                            <a href="https://www.walmart.com/search?q=labubu+pop+mart&tag=labubucentral-20" class="buy-btn walmart" target="_blank" rel="noopener">Walmart</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time to Chill Series -->
+                <div class="labubu-card" data-edition="chill" data-collection="popmart">
+                    <img src="https://via.placeholder.com/300x300/06B6D4/ffffff?text=CHILL+SUMMER" alt="Labubu Time to Chill">
+                    <div class="card-content">
+                        <h3>Labubu Time to Chill</h3>
+                        <p class="variant">Summer Edition</p>
+                        <div class="price-range">$48.99 - $65.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://amzn.to/3KjKsXT" class="buy-btn amazon" target="_blank" rel="noopener">Amazon</a>
+                            <a href="https://www.target.com/p/pop-mart-labubu-time-to-chill-series-vinyl-face-blind-box/-/A-90416022?tag=labubucentral-20" class="buy-btn target" target="_blank" rel="noopener">Target</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="labubu-card" data-edition="chill" data-collection="exclusive">
+                    <img src="https://via.placeholder.com/300x300/EC4899/ffffff?text=CHILL+WINTER" alt="Labubu Time to Chill - Winter Edition">
+                    <div class="card-content">
+                        <h3>Labubu Time to Chill</h3>
+                        <p class="variant">Winter Edition</p>
+                        <div class="price-range">$65.99 - $89.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn exclusive" target="_blank" rel="noopener">Exclusive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Limited Editions -->
+                <div class="labubu-card" data-edition="limited" data-collection="exclusive">
+                    <img src="https://via.placeholder.com/300x300/F59E0B/ffffff?text=LIMITED+GOLD" alt="Labubu Limited Edition">
+                    <div class="card-content">
+                        <h3>Labubu Limited Edition</h3>
+                        <p class="variant">Gold Variant</p>
+                        <div class="price-range">$89.99 - $150.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn exclusive" target="_blank" rel="noopener">Exclusive</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="labubu-card" data-edition="limited" data-collection="collab">
+                    <img src="https://via.placeholder.com/300x300/6366F1/ffffff?text=ARTIST+SERIES" alt="Labubu Collaboration">
+                    <div class="card-content">
+                        <h3>Labubu Collaboration</h3>
+                        <p class="variant">Artist Series</p>
+                        <div class="price-range">$75.99 - $120.99</div>
+                        <div class="buy-buttons">
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn popmart" target="_blank" rel="noopener">Pop Mart</a>
+                            <a href="https://m.popmart.com/us/products/6941848283018?tag=labubucentral-20" class="buy-btn exclusive" target="_blank" rel="noopener">Exclusive</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Labubu Central</h4>
+                <p>Your ultimate destination for Labubu collectibles</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Shop</a></li>
+                    <li><a href="blog.html">Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Labubu Central. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
