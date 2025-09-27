@@ -1,34 +1,32 @@
 @echo off
-REM ============================
-REM GitHub Pages Upload Script (Fixed)
-REM ============================
+REM ===============================
+REM LabubuCentral Deployment Script
+REM ===============================
 
-REM Set your local folder path
-SET LocalFolder=C:\LabubuWebsite
+REM 1. Navigate to your repo directory (change if different)
+cd /d C:\LabubuWebsite
 
-REM Set your GitHub repository URL
-SET RepoURL=https://github.com/LabubuCentral/LabubuCentral.github.io.git
+REM 2. Ensure we're on the main branch
+git checkout main
 
-REM Navigate to your local folder
-cd /d "%LocalFolder%"
-
-REM Initialize git if not already done
-git init
-
-REM Add remote if not already set
-git remote add origin %RepoURL%
-
-REM Rename branch to main
-git branch -M main
-
-REM Stage all changes
+REM 3. Stage all changes
 git add .
 
-REM Commit changes
-git commit -m "Upload website files"
+REM 4. Commit changes (only if there are any)
+git diff --cached --quiet
+if %errorlevel% neq 0 (
+    git commit -m "Auto-deploy on %date% at %time%"
+)
 
-REM Push to GitHub Pages (main branch)
-git push -u origin main
+REM 5. Fetch latest from GitHub
+git fetch origin
 
-echo Upload complete!
+REM 6. Rebase local commits on top of remote
+git rebase origin/main
+
+REM 7. Push changes to GitHub
+git push origin main
+
+REM ===============================
+echo Deployment complete!
 pause
